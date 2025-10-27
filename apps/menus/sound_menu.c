@@ -118,6 +118,15 @@ MENUITEM_SETTING(treble_cutoff, &global_settings.treble_cutoff, NULL);
 #endif
 #endif /* AUDIOHW_HAVE_TREBLE */
 
+/* Subharmonic Synthesizer */
+MENUITEM_SETTING(subharmonic_enable, &global_settings.subharmonic_enable, NULL);
+MENUITEM_SETTING(subharmonic_crossover, &global_settings.subharmonic_crossover, NULL);
+MENUITEM_SETTING(subharmonic_level, &global_settings.subharmonic_level, NULL);
+MENUITEM_SETTING(subharmonic_pregain, &global_settings.subharmonic_pregain, NULL);
+
+MAKE_MENU(subharmonic_menu, ID2P(LANG_SUBHARMONIC_ENABLE), 0, Icon_NOICON,
+          &subharmonic_enable, &subharmonic_crossover, &subharmonic_level, &subharmonic_pregain);
+
 
 MENUITEM_SETTING(balance, &global_settings.balance, NULL);
 MENUITEM_SETTING(channel_config, &global_settings.channel_config,
@@ -247,6 +256,8 @@ MAKE_MENU(sound_settings, ID2P(LANG_SOUND_SETTINGS), NULL, Icon_Audio,
 #ifdef AUDIOHW_HAVE_TREBLE_CUTOFF
           ,&treble_cutoff
 #endif
+        /* Subharmonic Synthesizer */
+        ,&subharmonic_menu
 #ifdef AUDIOHW_HAVE_EQ
           ,&audiohw_eq_tone_controls
 #endif
