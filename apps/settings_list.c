@@ -41,6 +41,7 @@
 #include "kernel.h"
 #include "open_plugin.h"
 #include "misc.h"
+#include "subharmonic.h"
 #include "playback.h"
 #ifdef HAVE_REMOTE_LCD
 #include "lcd-remote.h"
