@@ -408,6 +408,12 @@ struct user_settings
     unsigned int eq_precut;     /* dB */
     struct eq_band_setting eq_band_settings[EQ_NUM_BANDS]; /* for each band */
 
+    /* Subharmonic Synthesizer */
+    bool subharmonic_enable;     /* enable */
+    int subharmonic_crossover;  /* Hz, crossover frequency for subbass generator */
+    int subharmonic_level;      /* dB, gain of the new subbass components */
+    bool subharmonic_pregain;    /* reduce original signal */
+
     /* Misc. swcodec */
     int  beep;              /* system beep volume when changing tracks etc. */
     int  keyclick;          /* keyclick volume */
