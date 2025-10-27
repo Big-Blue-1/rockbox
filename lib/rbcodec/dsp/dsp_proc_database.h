@@ -47,6 +47,7 @@ DSP_PROC_DB_START
     DSP_PROC_DB_ITEM(TONE_CONTROLS) /* bass and treble */
 #endif
     DSP_PROC_DB_ITEM(PBE)           /* perceptual bass enhancement */
+    DSP_PROC_DB_ITEM(SUBHARMONIC)   /* subharmonic synthesizer */
     DSP_PROC_DB_ITEM(AFR)           /* auditory fatigue reduction */
     DSP_PROC_DB_ITEM(SURROUND)      /* haas surround */
     DSP_PROC_DB_ITEM(CHANNEL_MODE)  /* channel modes */
