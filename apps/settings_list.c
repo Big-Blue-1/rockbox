@@ -1923,6 +1923,27 @@ const struct settings_list settings[] = {
     SOUND_SETTING(F_NO_WRAP, treble_cutoff, LANG_TREBLE_CUTOFF,
                   "treble cutoff", SOUND_TREBLE_CUTOFF),
 #endif
+
+/* Subharmonic Synthesizer */
+OFFON_SETTING(0, subharmonic_enable,
+              LANG_SUBHARMONIC_ENABLE, 0,
+              "subharmonic enable", sound_set_subharmonic_enable),
+
+INT_SETTING(0, subharmonic_crossover,
+            LANG_SUBHARMONIC_XOVER, 80,
+            "subharmonic crossover", UNIT_HERTZ,
+            20, 200, 5,
+            NULL, NULL, sound_set_subharmonic_crossover),
+
+INT_SETTING_NOWRAP(0, subharmonic_level,
+            LANG_SUBHARMONIC_LEVEL, 0,
+            "subharmonic level", UNIT_DB,
+            -24, 12, 1,
+            NULL, NULL, sound_set_subharmonic_level),
+OFFON_SETTING(0, subharmonic_pregain,
+              LANG_SUBHARMONIC_PREGAIN, 0,
+              "subharmonic pregain", sound_set_subharmonic_pregain_enable),
+
 #ifdef HAVE_DIRCACHE
     /*enable dircache for all targets > 2MB of RAM by default*/
     OFFON_SETTING(F_BANFROMQS,dircache,LANG_DIRCACHE_ENABLE,true,"dircache",NULL),
