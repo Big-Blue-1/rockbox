@@ -720,6 +720,62 @@
   </voice>
 </phrase>
 <phrase>
+  id: LANG_SUBHARMONIC_ENABLE
+  desc: in sound_settings
+  user: core
+  <source>
+    *: "Subharmonic Synth"
+  </source>
+  <dest>
+    *: "Subharmonic Synth"
+  </dest>
+  <voice>
+    *: "Subharmonic Synth"
+  </voice>
+</phrase>
+<phrase>
+  id: LANG_SUBHARMONIC_XOVER
+  desc: in sound_settings
+  user: core
+  <source>
+    *: "Crossover"
+  </source>
+  <dest>
+    *: "Crossover"
+  </dest>
+  <voice>
+    *: "Crossover"
+  </voice>
+</phrase>
+<phrase>
+  id: LANG_SUBHARMONIC_LEVEL
+  desc: in sound_settings
+  user: core
+  <source>
+    *: "Gain"
+  </source>
+  <dest>
+    *: "Gain"
+  </dest>
+  <voice>
+    *: "Gain"
+  </voice>
+</phrase>
+<phrase>
+  id: LANG_SUBHARMONIC_PREGAIN
+  desc: in sound_settings
+  user: core
+  <source>
+    *: "-6 dB Preamp Gain"
+  </source>
+  <dest>
+    *: "-6 dB Preamp Gain"
+  </dest>
+  <voice>
+    *: "-6 dB Preamp Gain"
+  </voice>
+</phrase>
+<phrase>
   id: LANG_BALANCE
   desc: in sound_settings
   user: core
